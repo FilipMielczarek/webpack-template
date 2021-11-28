@@ -1,0 +1,28 @@
+@use "../abstracts/functions" as *;
+@use "../abstracts/variables" as *;
+
+@mixin for-phone-only {
+  @media (max-width: map-get($map: $breakpoints, $key: for-phone-only)) {
+    @content;
+  }
+}
+@mixin for-tablet-portrait-up {
+  @media (min-width: map-get($map: $breakpoints, $key: for-tablet-portrait-up)) {
+    @content;
+  }
+}
+@mixin for-tablet-landscape-up {
+  @media (min-width: map-get($map: $breakpoints, $key: for-tablet-landscape-up)) {
+    @content;
+  }
+}
+@mixin for-desktop-up {
+  @media (min-width: map-get($map: $breakpoints, $key: for-desktop-up)) {
+    @content;
+  }
+}
+@mixin for-big-desktop-up {
+  @media (min-width: map-get($map: $breakpoints, $key: for-big-desktop-up)) {
+    @content;
+  }
+}

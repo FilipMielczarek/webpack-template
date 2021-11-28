@@ -1,0 +1,19 @@
+@use "../abstracts/mixins" as *;
+@use "../abstracts/variables" as *;
+
+// Horizontal scrollbar won't appear
+// Padding won't resize your divs
+body {
+  box-sizing: border-box;
+  overflow-x: hidden;
+  background-color: #333;
+  color: #fff;
+}
+
+// Adjust container settings as you wish
+.container {
+  width: 100%;
+  max-width: 1260px;
+  margin: 0 auto;
+  padding: 0 14px;
+}
